@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    background-image: url("https://img.freepik.com/vector-premium/fondo-piso-madera-pared-ladrillo_87498-1679.jpg");
+    background-size:contain;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: scroll;
+}
+.principal{
+    display: flex;
+    justify-content: flex-start;
+}
+.nombres{
+    text-align: center;
+    border: 4px rgb(182, 87, 29) solid;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.Ascensor{
+    padding: 0px;
+    margin: 0px;
+    width: 490px;
+    height: 540px;
+    background-color: rgb(182, 178, 178);
+    border: 5px black solid;
+    /*box-shadow: 5px 5px 5px black;*/
+    overflow: hidden;
+}
+.contenedorRectangulos{
+    border-top: 2px black solid;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#rectangulo1, #rectangulo2{
+    margin: 0px;
+    width: 200px;
+    height: 99%;
+    border: 3px black solid;
+    background-color: rgb(177, 174, 174);
+}
+
+
+
+
+#piso{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#resp{
+    padding: 10px;
+    border: 2px black solid;
+}
+
+.tablero{
+    margin: 5px;
+    background-color: rgb(160, 163, 166);
+    padding: 10px;
+    border: 7px rgb(107, 105, 105) solid;
+    align-self: center;
+    height: 110px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 3px;
+    column-gap: 3px;
+}
+
+button:hover{
+    background-color: rgb(56, 214, 56);
+}
+
+button{
+    border-style: none;
+    border: 1px black solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.music{
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+}
+
+#icono{
+    width: 20px;
+    height: 20px;
+}
+
+.contMusica{
+    display:inline-flex;
+}
+
+.mover-der{
+    position: relative;
+    right: 150px;
+}
+
+.mover-izq{
+    position: relative;
+    left: 150px;
 }
